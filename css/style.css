@@ -73,6 +73,14 @@ h6 {
 body {
   font-family: "Open Sans",sans-serif
 }
+
+form {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .lock body {
   overflow: hidden;
   touch-action: none;
