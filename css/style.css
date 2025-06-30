@@ -269,7 +269,7 @@ textarea.input {
 }
 .card {
   width: 100%;
-  max-width: 41.9375rem;
+  max-width: 35rem;
   background-color: #062f7b;
   text-align: center;
   border-radius: 1.875rem
@@ -401,10 +401,10 @@ textarea.input {
     padding-left: 3.875rem
   }
   .card__img {
-    width: 15.5625rem
+    width: 10rem
   }
   .card__logo img {
-    width: 15.5625rem
+    width: 10rem
   }
   .card__title {
     font-size: 3.75rem
@@ -456,10 +456,26 @@ textarea.input {
   .card__text {
     font-size: .875rem
   }
+  .card {
+    max-width: 98vw;
+    margin: 0 1vw;
+    padding: 0.75rem 0.5rem 1rem 0.5rem;
+  }
 }
 @media (max-width:47.99875em) {
   .registration__characters {
     z-index: 5
+  }
+  
+  .card {
+    max-width: 28rem;
+    margin: 0 1rem;
+    padding: 1.5rem;
+  }
+  
+  .card__email-inp,
+  .card__bnt {
+    max-width: 22rem;
   }
 }
 @media (max-width:29.99875em) {
@@ -474,8 +490,28 @@ textarea.input {
     opacity: .15;
     background: linear-gradient(180deg,rgba(255,0,103,.9) 0,rgba(255,61,153,.9) 19%,rgba(255,174,246,.9) 100%)
   }
-  .page__info {
-    display: none
+  
+  .card {
+    max-width: 22rem;
+    margin: 0 0.75rem;
+    padding: 1.25rem;
+  }
+  
+  .card__email-inp,
+  .card__bnt {
+    max-width: 18rem;
+  }
+}
+@media (max-width: 23.4375em) {
+  .card {
+    max-width: 20rem;
+    margin: 0 0.5rem;
+    padding: 1rem;
+  }
+  
+  .card__email-inp,
+  .card__bnt {
+    max-width: 16rem;
   }
 }
 @media (min-width:20em)and (max-width:90em) {
@@ -495,10 +531,10 @@ textarea.input {
     top: clamp(25.375rem ,20.4642857143rem + 24.5535714286vw ,42.5625rem)
   }
   .registration__image--woman {
-    top: clamp(1.25rem ,-3.1964285714rem + 22.2321428571vw ,16.8125rem)
+    top: clamp(1.25rem ,-2.1964285714rem + 22.2321428571vw ,16.8125rem)
   }
   .registration__image--woman {
-    left: clamp(.3125rem ,-.8660714286rem + 5.8928571429vw ,4.4375rem)
+    left: clamp(.3125rem ,0.1rem + 5.8928571429vw ,4.4375rem)
   }
   .registration__image--woman {
     width: clamp(9.3125rem ,4.8303571429rem + 22.4107142857vw ,25rem)
@@ -522,10 +558,10 @@ textarea.input {
     padding-left: clamp(1.5625rem ,.9017857143rem + 3.3035714286vw ,3.875rem)
   }
   .card__img {
-    width: clamp(8rem ,5.8392857143rem + 10.8035714286vw ,15.5625rem)
+    width: clamp(6rem ,5.8392857143rem + 10.8035714286vw ,8rem)
   }
   .card__logo img {
-    width: clamp(8.9375rem ,7.0446428571rem + 9.4642857143vw ,15.5625rem)
+    width: clamp(6.5rem ,7.0446428571rem + 9.4642857143vw ,8rem)
   }
   .card__title {
     font-size: clamp(2rem ,1.5rem + 2.5vw ,3.75rem)
@@ -545,5 +581,21 @@ textarea.input {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
     transition: all .3s
+  }
+}
+@media (min-width: 48em) and (max-width: 64em) {
+  .registration__characters {
+    padding: 0 1rem;
+    z-index: 5;
+  }
+  .registration__image--woman {
+    top: 1.25rem;
+    left: 12rem;
+    width: 9.3125rem;
+  }
+  .registration__image--man {
+    top: 1.25rem;
+    right: 12rem;
+    width: 11.5rem;
   }
 }

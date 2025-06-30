@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20250626220102">
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,12 +38,10 @@
 									<p class="card__text">
 										Register early to receive an exclusive bonus!
 									</p>
-									<div class="card__email-inp">
-										<input autocomplete="off" type="email" name="form[]" data-error="Ошибка" placeholder="Enter your email" class="card__input input" />
-									</div>
-									<div class="card__bnt">
-										<a href="#" class="card__link button">Register</a>
-									</div>
+									<form action="https://formspree.io/f/meoknakr" method="POST" class="card__email-inp" style="background: rgba(255,255,255,.33); border-radius: 15px; padding: 4px; backdrop-filter: blur(10px); max-width: 26.1875rem; width: 100%;">
+										<input autocomplete="off" type="email" name="email" required placeholder="Enter your email" class="card__input input" />
+										<button type="submit" class="card__bnt button button--fw" style="margin-top: 10px;">Register</button>
+									</form>
 								</div>
 							</div>
 						</div>
