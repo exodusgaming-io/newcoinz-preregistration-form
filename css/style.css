@@ -473,13 +473,13 @@ textarea.input {
   .registration__characters {
     z-index: 5
   }
-  
+
   .card {
     max-width: 28rem;
     margin: 0 1rem;
     padding: 1.5rem;
   }
-  
+
   .card__email-inp,
   .card__bnt {
     max-width: 22rem;
@@ -497,13 +497,13 @@ textarea.input {
     opacity: .15;
     background: linear-gradient(180deg,rgba(255,0,103,.9) 0,rgba(255,61,153,.9) 19%,rgba(255,174,246,.9) 100%)
   }
-  
+
   .card {
     max-width: 22rem;
     margin: 0 0.75rem;
     padding: 1.25rem;
   }
-  
+
   .card__email-inp,
   .card__bnt {
     max-width: 18rem;
@@ -515,7 +515,7 @@ textarea.input {
     margin: 0 0.5rem;
     padding: 1rem;
   }
-  
+
   .card__email-inp,
   .card__bnt {
     max-width: 16rem;
@@ -571,7 +571,7 @@ textarea.input {
     width: clamp(6.5rem ,7.0446428571rem + 9.4642857143vw ,8rem)
   }
   .card__title {
-    font-size: clamp(2rem ,1.5rem + 2.5vw ,3.75rem)
+    font-size: clamp(2rem ,1rem + 2.5vw ,3.75rem)
   }
   .card__text {
     font-size: clamp(.875rem ,.6785714286rem + .9821428571vw ,1.5625rem)
@@ -604,5 +604,19 @@ textarea.input {
     top: 1.25rem;
     right: 12rem;
     width: 11.5rem;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 640px) {
+  .registration__body {
+    margin-top: 1rem;
+  }
+
+  .card {
+    padding-top: 0.5rem;
+  }
+
+  .card__img {
+    width: clamp(2rem, 5.839286rem + 6.803571vw, 6rem);
   }
 }
