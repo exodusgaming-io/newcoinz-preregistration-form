@@ -34,18 +34,32 @@
 									<div class="card__logo">
 										<img src="img/Logo.webp" alt="Image" />
 									</div>
-									<h2 class="card__title">COMING SOON</h2>
-									<p class="card__text">
-										Register for early access and a chance at an exclusive bonus!
-									</p>
-									<form action="https://formspree.io/f/mqaldraa" method="POST">
-										<div class="card__email-inp">
-											<input autocomplete="off" type="email" name="email" required placeholder="Enter your email" class="card__input input" />
+									<div id="registration-content">
+										<h2 class="card__title">COMING SOON</h2>
+										<p class="card__text">
+											Register for early access and a chance at an exclusive bonus!
+										</p>
+										<div id="registration-form">
+											<form action="https://formspree.io/f/mqaldraa" method="POST">
+												<input type="hidden" name="_next" value="/?success=true" />
+												<div class="card__email-inp">
+													<input autocomplete="off" type="email" name="email" required placeholder="Enter your email" class="card__input input" />
+												</div>
+												<div class="card__bnt">
+													<button type="submit" class="card__link button">JOIN NOW</button>
+												</div>
+											</form>
 										</div>
-										<div class="card__bnt">
-											<button type="submit" class="card__link button">JOIN NOW</button>
+									</div>
+									<div id="success-message" style="display: none;">
+										<div class="card__success">
+											<div class="card__success-icon">✓</div>
+											<h3 class="card__success-title">Thank You!</h3>
+											<p class="card__success-text">
+												You've been successfully registered for early access. We'll notify you as soon as we launch!
+											</p>
 										</div>
-									</form>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -186,5 +200,5 @@
 	</div>
 	<script src="js/app.min.js?_v=20250626220102"></script>
 </body>
-  
+
 </html>
