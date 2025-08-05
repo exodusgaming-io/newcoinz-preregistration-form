@@ -623,3 +623,86 @@ textarea.input {
     width: clamp(2rem, 5.839286rem + 6.803571vw, 6rem);
   }
 }
+
+/* Registration Content Styles */
+#registration-content {
+  width: 100%;
+}
+
+/* Success Message Styles */
+.card__success {
+  text-align: center;
+  padding: 2rem 1rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.card__success-icon {
+  width: 4rem;
+  height: 4rem;
+  background: linear-gradient(135deg, #DA27DA 0%, #FF0067 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 4px 15px rgba(218, 39, 218, 0.3);
+}
+
+.card__success-title {
+  font-size: clamp(1.5rem, 1rem + 2vw, 2.5rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.card__success-text {
+  font-size: clamp(0.875rem, 0.678571rem + 0.982143vw, 1.25rem);
+  line-height: 1.5;
+  color: #fff;
+  opacity: 0.9;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments for success message */
+@media (max-width: 47.99875em) {
+  .card__success {
+    padding: 1.5rem 1rem;
+  }
+
+  .card__success-icon {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 29.99875em) {
+  .card__success {
+    padding: 1rem 0.5rem;
+  }
+
+  .card__success-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+}
