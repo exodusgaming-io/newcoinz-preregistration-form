@@ -277,7 +277,7 @@ textarea.input {
 }
 .card {
   width: 100%;
-  max-width: 35rem;
+  max-width: clamp(10rem, 1rem + 35vw, 35rem);
   background-color: #062f7b;
   text-align: center;
   border-radius: 1.875rem
@@ -591,6 +591,9 @@ textarea.input {
   }
 }
 @media (min-width: 48em) and (max-width: 64em) {
+  .card {
+    max-width: clamp(10rem, 1rem + 50vw, 35rem);
+  }
   .registration__characters {
     padding: 0 1rem;
     z-index: 5;
