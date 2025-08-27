@@ -636,7 +636,7 @@ textarea.input {
 .social {
   display: flex;
   gap: 12px;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 .social__item a {
