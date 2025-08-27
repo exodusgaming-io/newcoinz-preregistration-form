@@ -629,6 +629,26 @@ textarea.input {
   width: 100%;
 }
 
+/* Social icons under signup */
+.card__social {
+  margin-top: .75rem;
+}
+.social {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+.social__item a {
+  color: #fff;
+  opacity: .9;
+  transition: opacity .2s ease, transform .2s ease;
+}
+.social__item a:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
 /* Success Message Styles */
 .card__success {
   text-align: center;
